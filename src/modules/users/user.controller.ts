@@ -8,10 +8,10 @@ import { UserService } from './user.service';
 
 @Controller('users')
 export class UserController {
-  constructor(private readonly profilesService: UserService) { }
+  constructor(private readonly userService: UserService) { }
 
   @Get()
   async getAllUsers(): Promise<User[]> {
-    return await this.profilesService.getAllUsers();
+    return await this.userService.getAllUsers();
   }
 }
