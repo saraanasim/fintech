@@ -33,7 +33,7 @@ export class BookingService {
   }
 
    // For updating booking status
-   async markCompleted(
+   async update(
     bookingId:string,
     updateBookingDto:UpdateBookingDto
   ): Promise<BookingDocument> {
@@ -46,7 +46,5 @@ export class BookingService {
       );
     }
   }
-
-  
 
 }

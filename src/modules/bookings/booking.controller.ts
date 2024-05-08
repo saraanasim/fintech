@@ -27,6 +27,6 @@ export class BookingController {
     @Body() updateBookingDto: UpdateBookingDto,
     @Param('bookingId') bookingId: string,
   ): Promise<BookingDocument> {
-    return this.bookingService.markCompleted(bookingId,updateBookingDto);
+    return this.bookingService.update(bookingId,updateBookingDto);
   }
 }

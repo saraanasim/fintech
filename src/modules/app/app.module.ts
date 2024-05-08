@@ -1,12 +1,14 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
+import { BookingModule } from '../bookings/booking.module';
 import { ConfigModule } from '../common/config/config.module';
 import { ConfigService } from '../common/config/config.service';
-import { UserModule } from '../users/user.module';
 import { MerchantModule } from '../merchants/merchant.module';
-import { BookingModule } from '../bookings/booking.module';
+import { PaymentModule } from '../payments/payment.module';
+import { ReviewModule } from '../reviews/review.module';
+import { UserModule } from '../users/user.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -23,7 +25,9 @@ import { BookingModule } from '../bookings/booking.module';
     ConfigModule,
     UserModule,
     MerchantModule,
-    BookingModule
+    BookingModule,
+    PaymentModule,
+    ReviewModule
   ],
   controllers: [AppController],
   providers: [AppService],
