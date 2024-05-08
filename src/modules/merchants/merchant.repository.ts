@@ -4,8 +4,8 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { getFindQueryProps } from 'src/utils/helpers';
-import { FindPayloadType } from 'src/utils/types';
+import { getFindQueryProps } from '../../utils/helpers';
+import { FindPayloadType } from '../../utils/types';
 import { Merchant, MerchantDocument } from './merchant.model';
 
 @Injectable()

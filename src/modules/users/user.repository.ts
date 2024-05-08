@@ -5,10 +5,9 @@ import {
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-
-import { getFindQueryProps } from 'src/utils/helpers';
-import { FindPayloadType } from 'src/utils/types';
 import { User, UserDocument } from './user.model';
+import { FindPayloadType } from '../../utils/types';
+import { getFindQueryProps } from '../../utils/helpers';
 
 @Injectable()
 export class UserRepository {

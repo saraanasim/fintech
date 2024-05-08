@@ -14,20 +14,6 @@ export class Review {
     @Prop({ required: true, type: Number, min: 0, max: 5 })
     rating: number;
 
-    @Prop({ required: true, type: Date, default: Date.now })
-    createdAt: Date;
-
-    @Prop({ type: Date, default: null })
-    updatedAt: Date;
-
-    @Prop({
-        required: false,
-        type: mongoose.Schema.Types.ObjectId,
-        ref: Merchant.name,
-        default: null,
-    })
-    merchant: string;
-
     @Prop({
         required: false,
         type: mongoose.Schema.Types.ObjectId,

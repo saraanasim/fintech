@@ -1,11 +1,10 @@
 import {
     IsEnum,
     IsMongoId,
-    IsNotEmpty,
     IsOptional,
     IsString
 } from 'class-validator';
-import { BookingStatuses } from 'src/utils/constants';
+import { BookingStatuses } from '../../../utils/constants';
 
 export class CreateBookingDto {
 

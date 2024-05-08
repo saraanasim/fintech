@@ -1,10 +1,8 @@
 import { BadRequestException, Injectable, Logger } from '@nestjs/common';
-import { CreatePaymentDto } from './dto/create-payment.dto';
-import { PaymentDocument } from './payment.model';
-import { PaymentRepository } from './payment.repository';
+import { BookingStatuses } from '../../utils/constants';
 import { BookingService } from '../bookings/booking.service';
-import { BookingStatuses } from 'src/utils/constants';
-import { BookingDocument } from '../bookings/booking.model';
+import { CreatePaymentDto } from './dto/create-payment.dto';
+import { PaymentRepository } from './payment.repository';
 import { PaymentSuccessResponse } from './payment.types';
 
 @Injectable()

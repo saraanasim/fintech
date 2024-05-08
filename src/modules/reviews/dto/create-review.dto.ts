@@ -17,9 +17,5 @@ export class CreateReviewDto {
 
   @IsNotEmpty()
   @IsMongoId()
-  merchant: string;
-
-  @IsNotEmpty()
-  @IsMongoId()
   booking?: string;
 }

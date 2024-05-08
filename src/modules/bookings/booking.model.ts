@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { Document } from 'mongoose';
 
 import { HydratedDocument } from 'mongoose';
-import { BookingStatuses } from 'src/utils/constants';
+import { BookingStatuses } from '../../utils/constants';
 import { Merchant } from '../merchants/merchant.model';
 import { User } from '../users/user.model';
 
