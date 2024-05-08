@@ -18,5 +18,5 @@ https://www.loom.com/share/079e470899a642dd80f4a3000cf24eba
 2. Run command `yarn` in terminal
 3. Run command `yarn test` in terminal
 
-## Deliverable 2 (Code)
+## Deliverable 4 (Code)
 Please clone this repository "https://github.com/saraanasim/fintech.git"
