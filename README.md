@@ -2,6 +2,7 @@
 
 > ## NOTE: 
 **All deliverables including postman collection and schema diagram have been INCLUDED IN CODE AS WELL**
+https://www.loom.com/share/079e470899a642dd80f4a3000cf24eba
 
 ## Deliverable 1 ( Schema Diagram)
 1. Please clone this repository "https://github.com/saraanasim/fintech.git"
